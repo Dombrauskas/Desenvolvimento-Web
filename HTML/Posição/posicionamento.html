@@ -10,9 +10,11 @@
     	}
     	
     	#titulo {
+    		position: relative;
     		background-color: white;
     		padding: 10px;
     		margin: 30px auto;
+    		height: 1000px;
     	}
 
     	#Relativo {
@@ -21,10 +23,21 @@
     		left: 50px;
     	}
 
+    	#Absoluto {
+    		position: absolute;
+    		right: 50px;
+    	}
+
+    	#Fixo {
+    		position: fixed;
+    	}
+
     	.bloco {
     		background-color: #77dd77;
     		width: 200px;
     		height: 100px;
+    		padding: 4px;
+    		text-align: justify;
     	}
     </style>
 </head>
@@ -34,17 +47,20 @@
 		
 		<h4>Relative</h4>
 		<div id="Relativo" class="bloco">
-			Relavtivo
+			<strong>Relavtivo</strong><br/>
+			Move o bloco em relação a sua posição original.
 		</div>
 		
 		<h4>Absoluto</h4>
-		<div id="Absoluto" class="bloco">
-			Absoluto
+		<div id="Absoluto" class="bloco"S>
+			<strong>Absoluto</strong><br/>
+			Mantém o bloco numa posição definida; essa posição é relativa a seu bloco superior que tenha uma position.
 		</div>
 		
 		<h4>Fixo</h4>
 		<div id="Fixo" class="bloco">
-			Fixo
+			<strong>Fixo</strong><br/>
+			Mantém o bloco numa posição fixada; mesmo rolando a tela para cima ou para baixo o bloco fica estático.
 		</div>
 	</div>
     
