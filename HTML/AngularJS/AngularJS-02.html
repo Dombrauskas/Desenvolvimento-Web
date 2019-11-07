@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app lang="pt-br">
+<head>
+	<title>AngularJS</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+	<h1>AngularJS</h1>
+	<hr/>
+	<p>AngularJS é uma forma simples de incluir dados dentro da página html.</p>
+	<p>Dentro da div é criado uma variável que receberá o conteúdo da caixa de texto e, será exibida na linha seguinte</p>
+	<p>conforme é digitado.</p>
+	<p>AngularJS is an easier way to include data into the html body page.</p>
+	<p>Inside div is created a variable in which will be saved the name typed onto the textbox, then it will be printed</p>
+	<p>in the following line as it is typed.</p>
+	<hr/>
+	<div ng-init="nome">
+		<h3>Nome <input type="text" ng-model="nome"></h3>
+		<p>Olá <strong>{{nome}}</strong></p>
+	</div>
+</body>
+</html>
